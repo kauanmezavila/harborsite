@@ -800,28 +800,6 @@
     </main>
   </section>
 
-  <!-- POST -->
-  <section data-page="post">
-    <main class="mx-auto max-w-6xl border-x border-border">
-      <section class="border-b border-border px-6 py-16 sm:px-16 lg:px-28">
-        <div class="mx-auto max-w-2xl">
-          <a href="#" data-nav="blog" class="cursor-pointer font-mono text-[11px] uppercase tracking-wide text-muted-foreground hover:text-foreground">&larr; Back to blog</a>
-          <p class="mt-6 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">Engineering &middot; 6 min read</p>
-          <h1 class="mt-3 text-3xl font-bold tracking-[-0.02em] sm:text-4xl">How we cut cold starts to zero</h1>
-        </div>
-      </section>
-      <section class="px-6 py-14 sm:px-16 lg:px-28">
-        <div class="mx-auto max-w-2xl space-y-4 text-[15px] leading-relaxed text-muted-foreground [&_h2]:mt-8 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:tracking-tight [&_h2]:text-foreground">
-          <p>Cold starts have long been the tax you pay for serverless. When a function hasn't run recently, the platform has to spin up a new instance, and your user waits. We decided that tax was unacceptable.</p>
-          <h2>The approach</h2>
-          <p>Instead of booting a fresh runtime per request, DevTools keeps a pool of warm isolates at every edge location and routes incoming requests to the nearest available one. The result is a sub-millisecond startup, even for traffic that arrives in bursts.</p>
-          <h2>What it means for you</h2>
-          <p>You deploy the same code you always have. There is nothing to configure. Your functions simply run faster, everywhere, all the time.</p>
-        </div>
-      </section>
-    </main>
-  </section>
-
   <!-- CAREERS -->
   <section data-page="careers">
     <main class="mx-auto max-w-6xl border-x border-border">
@@ -859,7 +837,7 @@
       <section class="border-b border-border px-6 py-16 text-center sm:px-16 lg:px-28">
         <span class="font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">Contact</span>
         <h1 class="mx-auto mt-4 max-w-3xl text-4xl font-bold tracking-[-0.03em] sm:text-5xl">Get in touch</h1>
-        <p class="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">Questions about Harbor? Want to elogiate the creator? We would love to hear from you.</p>
+        <p class="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">Questions about Harbor? Want to elogiate the creator?<br> We would love to hear from you.</p>
       </section>
       <section class="px-6 py-14 sm:px-16 lg:px-28">
         <div class="mx-auto grid max-w-3xl gap-5 sm:grid-cols-3">
